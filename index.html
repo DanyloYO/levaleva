@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LevaLeva – Lege og tannlege i Levanger</title>
+  <meta name="description" content="LevaLeva helsesenter i Levanger: lege, tannlege og gratis trimturer for pasientene våre.">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="forside">
+  <a class="skip" href="#main">Hopp til innhold</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="LevaLeva – til forsiden">
+        <img src="assets/logo-mark.png" alt="" width="46" height="44">
+        <span class="brand__text"><span class="brand__name">LevaLeva</span><span class="brand__sub">Lege og tannlege</span></span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Hovedmeny">
+        <a href="index.html" data-nav="forside">Forside</a>
+        <a href="pamelding.html" data-nav="turer">Trimturer</a>
+        <a href="ny-tur.html" data-nav="ansatt">For ansatte</a>
+      </nav>
+      <div class="header-actions">
+        <div id="auth-slot"></div>
+        <button class="icon-btn nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Meny"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__bg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Ekne.JPG/1920px-Ekne.JPG" alt="Grønne jorder og Trondheimsfjorden ved Ekne i Levanger"></div>
+      <div class="container hero__grid">
+        <div>
+          <span class="eyebrow">Trimturer i Levanger</span>
+          <h1>Ut på tur – <em>for kropp og hode</em></h1>
+          <p class="hero__lead">LevaLeva arrangerer gratis trimturer for pasientene våre, med erfarne turledere fra legekontoret og tannklinikken. Finn en tur som passer deg, og meld deg på med ID-porten.</p>
+          <div class="hero__actions">
+            <a class="btn btn--light" href="pamelding.html"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Se turkalenderen</a>
+            <a class="btn btn--ghost-light" href="#om-turene">Slik fungerer det</a>
+          </div>
+          <div class="hero__trust">
+            <span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Gratis for pasienter</span>
+            <span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Turer for alle nivåer</span>
+            <span><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Sikker innlogging</span>
+          </div>
+        </div>
+
+        <aside class="next-card" id="neste-tur" aria-label="Neste tur">
+          <div class="next-card__label"><span>Neste tur</span><span class="live-dot">Påmelding åpen</span></div>
+          <div class="skeleton" style="height:64px"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Tall -->
+    <div class="container">
+      <div class="stats reveal" id="stats">
+        <div class="stat"><div class="stat__num" data-stat="turer">–</div><div class="stat__label">turer denne uka</div></div>
+        <div class="stat"><div class="stat__num">4</div><div class="stat__label">faste turledere</div></div>
+        <div class="stat"><div class="stat__num" data-stat="tilrettelagt">–</div><div class="stat__label">tilrettelagt for rullestol</div></div>
+        <div class="stat"><div class="stat__num">0 kr</div><div class="stat__label">for deg som er pasient</div></div>
+      </div>
+    </div>
+
+    <!-- Kommende turer -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Snart</span>
+            <h2>Kommende turer</h2>
+            <p>Et utvalg av turene de neste dagene. Trykk på en tur for detaljer, værmelding og påmelding.</p>
+          </div>
+          <a class="link-arrow" href="pamelding.html">Se hele kalenderen <svg class="icon" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+        </div>
+        <div class="tour-cards" id="kommende"></div>
+      </div>
+    </section>
+
+    <!-- Slik fungerer det -->
+    <section class="section section--white" id="om-turene">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Påmelding</span>
+            <h2>Tre enkle steg</h2>
+            <p>Du trenger ingen ny bruker. Vi bruker ID-porten, som du kjenner fra Helsenorge og NAV.</p>
+          </div>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step__icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></div>
+            <h3>Finn en tur</h3>
+            <p>Bla i ukeplanen og filtrer på nivå. Alle turer har tid, sted, varighet og turleder.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__icon"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg></div>
+            <h3>Logg inn og meld deg på</h3>
+            <p>Logg inn med BankID eller MinID via ID-porten. Andre ser bare hvor mange som er påmeldt – aldri hvem.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__icon"><svg class="icon" aria-hidden="true"><use href="#i-trees"/></svg></div>
+            <h3>Møt opp og nyt turen</h3>
+            <p>Sjekk værmeldingen i turvinduet og møt opp. Blir det endringer, får du beskjed på SMS.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Natur som medisin -->
+    <section class="section">
+      <div class="container split">
+        <div class="split__media reveal">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Alstadhaug%2812%29_Udsigt_fra_kirkeg%C3%A5rden.jpg" alt="Utsikt mot fjorden mellom store løvtrær ved Alstadhaug" loading="lazy">
+          <div class="float-quote">«Det var godt å komme i gang igjen – og hyggelig å gå sammen med andre.»<small>Deltaker på formiddagsturen</small></div>
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Natur som medisin</span>
+          <h2>Litt bevegelse hver dag gjør en stor forskjell</h2>
+          <p class="lead">Regelmessig aktivitet gir bedre søvn, sterkere hjerte og mindre stress. Derfor tar vi helsearbeidet ut av venterommet og inn i naturen rundt Levanger.</p>
+          <ul class="check-list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Trygt og tilpasset.</strong> Turene ledes av fysioterapeut, lege, sykepleier og tannpleier.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>For alle.</strong> Flere turer er tilrettelagt for rullestol og barnevogn.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Sosialt.</strong> Fruktpause ved gapahuken og kaffe på bålet hører med.</span></li>
+          </ul>
+          <a class="btn" href="pamelding.html">Finn din tur<svg class="icon" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tjenester -->
+    <section class="section section--sand">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Våre tjenester</span>
+            <h2>Lege og tannlege under samme tak</h2>
+          </div>
+        </div>
+        <div class="services">
+          <article class="service reveal">
+            <div class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-stethoscope"/></svg></div>
+            <h3>Legekontor</h3>
+            <p>Fastlege, helsesjekk, vaksiner og oppfølging av kroniske sykdommer. Vi tar godt imot både nye og faste pasienter.</p>
+            <div class="service__actions">
+              <a class="btn btn--light btn--sm" href="#" data-placeholder>Bestill legetime</a>
+              <a class="btn btn--ghost-light btn--sm" href="tel:+4774000000">Ring oss</a>
+            </div>
+          </article>
+          <article class="service service--alt reveal">
+            <div class="service__icon"><svg class="icon" aria-hidden="true"><use href="#i-smile"/></svg></div>
+            <h3>Tannklinikk</h3>
+            <p>Undersøkelse, tannrens, fyllinger og akutthjelp. Vi har god tid til deg som gruer deg til tannlegen.</p>
+            <div class="service__actions">
+              <a class="btn btn--sm" href="#" data-placeholder>Bestill tannlegetime</a>
+              <a class="btn btn--ghost btn--sm" href="tel:+4774000001">Ring tannklinikken</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="section" id="kontakt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Finn fram</span>
+            <h2>Midt i trehusbyen</h2>
+            <p>Du finner oss i sentrum av Levanger, kort vei fra stasjonen og bussen.</p>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="contact-card reveal">
+            <ul class="contact-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><div><strong>Adresse</strong>Kirkegata 40, 7600 Levanger</div></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><div><strong>Telefon</strong><a href="tel:+4774000000">74 00 00 00</a></div></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><div><strong>E-post</strong><a href="mailto:post@levaleva.example">post@levaleva.example</a></div></li>
+            </ul>
+            <table class="hours" aria-label="Åpningstider">
+              <tbody id="apningstider">
+                <tr data-dag="1"><td>Mandag</td><td>08:00–16:00</td></tr>
+                <tr data-dag="2"><td>Tirsdag</td><td>08:00–16:00</td></tr>
+                <tr data-dag="3"><td>Onsdag</td><td>08:00–16:00</td></tr>
+                <tr data-dag="4"><td>Torsdag</td><td>08:00–19:00</td></tr>
+                <tr data-dag="5"><td>Fredag</td><td>08:00–15:00</td></tr>
+                <tr data-dag="6"><td>Lørdag og søndag</td><td>Stengt</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="map reveal">
+            <iframe title="Kart over Levanger sentrum" loading="lazy"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=11.2830%2C63.7400%2C11.3150%2C63.7520&amp;layer=mapnik&amp;marker=63.7463%2C11.2995"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html"><span class="footer-brand__mark"><img src="assets/logo-mark.png" alt=""></span><span class="brand__text"><span class="brand__name">LevaLeva</span><span class="brand__sub">Lege og tannlege</span></span></a>
+        <p>Helsesenteret for hele familien i Levanger – med lege, tannlege og trimturer for kropp og hode.</p>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul><li>Kirkegata 40, 7600 Levanger</li><li><a href="tel:+4774000000">74 00 00 00</a></li><li><a href="mailto:post@levaleva.example">post@levaleva.example</a></li></ul>
+      </div>
+      <div>
+        <h4>Åpningstider</h4>
+        <ul><li>Man–fre: 08:00–16:00</li><li>Torsdag: 08:00–19:00</li><li>Ved akutt sykdom: 116 117</li></ul>
+      </div>
+      <div>
+        <h4>Snarveier</h4>
+        <ul><li><a href="pamelding.html">Turkalender</a></li><li><a href="ny-tur.html">For ansatte</a></li><li><a href="#kontakt">Finn fram</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="aar">2026</span> LevaLeva · Skoleprosjekt, ikke en ekte tjeneste</span>
+      <details class="credits"><summary>Bildekreditering (Wikimedia Commons)</summary><ul id="credits-list"></ul></details>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/forside.js"></script>
+</body>
+</html>
